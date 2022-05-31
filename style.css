@@ -88,7 +88,8 @@ input,
 }
 
 /* New Task */
-.new-task-section__label {
+.new-task-section__label,
+.main-header_margin-bottom {
   display: block;
   margin: 0 0 20px;
 }
