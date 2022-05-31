@@ -4,27 +4,27 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.__memo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa .memo__image {
+.__memo__image {
   width: 100%;
 }
-.aaa .more_inf {
+.__memo__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .__memo { 
     text-align: center;
   }
 
 }
-.centered-main-page-element {
+.__centralizer {
   display: block;
   width: 500px;
   margin: 0 auto 0;
