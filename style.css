@@ -44,7 +44,7 @@
 .list-item {
   list-style: none;
 }
-input,
+.input,
 .button {
   outline: none;
 }
