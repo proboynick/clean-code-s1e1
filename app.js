@@ -18,7 +18,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    listItem.className='list-item';
+    listItem.className='list__item';
 
     //input (checkbox)
     var checkBox=document.createElement("input");
@@ -94,11 +94,11 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("list-item_editable");
-    //If class of the parent is .list-item_editable
+    var containsClass=listItem.classList.contains("list__item_editable");
+    //If class of the parent is .list__item_editable
     if(containsClass){
 
-        //switch to .list-item_editable
+        //switch to .list__item_editable
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -107,8 +107,8 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .list-item_editable on the parent.
-    listItem.classList.toggle("list-item_editable");
+    //toggle .list__item_editable on the parent.
+    listItem.classList.toggle("list__item_editable");
 };
 
 
