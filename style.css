@@ -143,11 +143,11 @@ input,
   display: none;
 }
 
-.list-item.editMode .text-input {
+.list-item_editable .text-input {
   display: inline-block;
   width: 224px
 }
 
-.list-item.editMode .label {
+.list-item_editable .label {
   display:none;
 }

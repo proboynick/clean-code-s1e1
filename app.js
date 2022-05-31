@@ -94,11 +94,11 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
-    //If class of the parent is .editmode
+    var containsClass=listItem.classList.contains("list-item_editable");
+    //If class of the parent is .list-item_editable
     if(containsClass){
 
-        //switch to .editmode
+        //switch to .list-item_editable
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -107,8 +107,8 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    //toggle .list-item_editable on the parent.
+    listItem.classList.toggle("list-item_editable");
 };
 
 
